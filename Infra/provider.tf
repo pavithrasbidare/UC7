@@ -17,7 +17,7 @@ terraform {
       version = ">= 2.0.0"
     }
   }
-  required_version = ">= 1.3.0"
+  required_version = ">= 1.1.4"
 }
 
 
@@ -57,7 +57,7 @@ resource "kubernetes_config_map" "aws_auth" {
     ])
     mapUsers = jsonencode([
   {
-    userarn = "arn:aws:iam::183114607892:user/terraform-user"
+    userarn = "arn:aws:iam::302263075199:user/terraform-user"
     username = "terraform-user"
     groups = [
       "system:masters"
